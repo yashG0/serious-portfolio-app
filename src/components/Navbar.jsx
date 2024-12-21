@@ -12,7 +12,7 @@ export function Navbar() {
 				</div>
 
 				{/*	PORTFOLIO SOCIAL ICONS */}
-				<div className={"flex items-center justify-center gap-4 md:text-3xl text-2xl"}>
+				<div className={"flex items-center justify-center md:gap-6 gap-2 md:text-3xl text-2xl"}>
 					<a href="https://www.linkedin.com/in/yash-gaurkar-a897b3228/" target="_blank" rel="noreferrer">
 						<FaLinkedinIn className={"cursor-pointer hover:text-white"}/>
 					</a>
