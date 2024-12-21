@@ -8,11 +8,11 @@ export function Navbar() {
 				{/* PORTFOLIO TITLE */}
 				<div className={"flex flex-shrink-0 items-center"}>
 					<span
-						className={"md:text-5xl text-3xl font-Nothing font-bold hover:text-white cursor-pointer"}>Yash Gaurkar</span>
+						className={"lg:text-5xl md:text-3xl text-2xl font-Nothing font-bold hover:text-white cursor-pointer"}>Yash Gaurkar</span>
 				</div>
 
 				{/*	PORTFOLIO SOCIAL ICONS */}
-				<div className={"flex items-center justify-center gap-4 text-2xl"}>
+				<div className={"flex items-center justify-center gap-4 md:text-3xl text-2xl"}>
 					<a href="https://www.linkedin.com/in/yash-gaurkar-a897b3228/" target="_blank" rel="noreferrer">
 						<FaLinkedinIn className={"cursor-pointer hover:text-white"}/>
 					</a>
