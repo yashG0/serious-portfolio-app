@@ -23,6 +23,7 @@ export const Project = () => {
 							            initial={{opacity: 0, x: -100}}
 							            transition={{duration: 0.5}}
 							>
+								{/* PROJECT IMAGEs */}
 								<img
 									src={project.image}
 									width={150}
@@ -38,13 +39,16 @@ export const Project = () => {
 							            initial={{opacity: 0, x: 100}}
 							            transition={{duration: 1}}
 							>
+								{/* Project TITLE and Description */}
 								<h6 className={"mb-2 font-semibold"}>{project.title}</h6>
 								<p className={"mb-4 text-neutral-400"}>{project.description}</p>
+
+								{/* PROJECT TECHNOLOGY LISTING */}
 								{project.technologies.map((technology, index) => (
 									<span
 										key={index}
 										className={
-											"mr-2 rounded bg-neutral-950 px-2 py-1 text-sm font-medium text-purple-100"
+											"mr-2 rounded border border-gray-800 bg-neutral-950 px-2 py-1 text-sm font-medium text-purple-100"
 										}
 									>
             {technology}

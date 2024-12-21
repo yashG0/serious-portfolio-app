@@ -1,4 +1,4 @@
-import ABOUT_IMG from "../../assets/about.jpg"
+import ABOUT_IMG from "../../assets/Designer.jpeg"
 import {ABOUT_TEXT} from "../../constants/index.js"
 import {motion} from "framer-motion";
 
@@ -18,7 +18,7 @@ export const About = () => {
 					>
 						{/* ABOUT IMAGE */}
 						<div className={"flex items-center justify-center"}>
-							<img className={"rounded-2xl"} src={ABOUT_IMG} alt="about image"/>
+							<img className={"rounded-2xl w-2/3"} src={ABOUT_IMG} alt="about image"/>
 						</div>
 					</motion.div>
 

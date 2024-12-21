@@ -1,5 +1,5 @@
 import {HERO_CONTENT} from "../../constants/index.js";
-import PROFILE_PIC from "../../assets/kevinRushProfile.jpg";
+import PROFILE_PIC from "../../assets/Designer (1).jpeg";
 import {motion} from "framer-motion";
 
 const container = (delay) => (
@@ -53,7 +53,9 @@ export const Hero = () => {
 							<motion.img initial={{x: 100, opacity: 0}} animate={{x: 0, opacity: 1}}
 							            transition={{duration: 1, delay: 1.25}}
 							            src={PROFILE_PIC}
-							            alt={"profile picture"}/>
+							            alt={"profile picture"}
+													className={"w-2/3 opacity-20"}
+							/>
 						</div>
 					</div>
 				</div>
