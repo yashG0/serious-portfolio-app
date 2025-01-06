@@ -16,7 +16,7 @@ export const PROJECTS = [
 		image: project1,
 		description:
 			"A fully functional e-commerce website with features like product listing, shopping cart, order summery and user authentication.",
-		technologies: ["HTML", "React", "Tailwindcss", "Python", "FastApi", "SqLite"],
+		technologies: ["HTML", "React", "Tailwindcss", "FastApi", "SqLite"],
 	},
 	{
 		title: "Task Management App",
