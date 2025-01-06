@@ -37,7 +37,7 @@ export const PROJECTS = [
 		image: project4,
 		description:
 			"A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-		technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+		technologies: ["HTML", "CSS", "React", "fastAPI", "mySQL"],
 	},
 ];
 
