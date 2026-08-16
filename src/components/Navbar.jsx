@@ -6,9 +6,9 @@ export function Navbar() {
 			<nav className={"mb-20 flex items-center justify-between py-6"}>
 
 				{/* PORTFOLIO TITLE */}
-				<div className={"flex flex-shrink-0 items-center"}>
+				<div className={"flex shrink-0 items-center"}>
 					<span
-						className={"lg:text-5xl md:text-3xl text-2xl font-Nothing font-bold hover:text-white cursor-pointer"}>Yash Gaurkar</span>
+						className={"lg:text-5xl md:text-3xl text-2xl font-Nothing font-bold hover:text-white cursor-pointer"}>YASH</span>
 				</div>
 
 				{/*	PORTFOLIO SOCIAL ICONS */}
