@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowDown, FiGithub, FiMail } from "react-icons/fi";
-import PROFILE_PIC from "../../assets/Designer (1).jpeg";
+import PROFILE_PIC from "../../assets/designer2.jpeg";
 
 const fadeUp = (delay = 0) => ({
 	hidden: {
@@ -130,20 +130,20 @@ export const Hero = () => {
 						}}
 						className="flex justify-center lg:justify-end"
 					>
-						<div className="relative w-full max-w-[330px] sm:max-w-[360px] lg:max-w-[390px]">
+						<div className="relative w-full max-w-82.5 sm:max-w-90 lg:max-w-97.5">
 
 							{/* GLOW */}
-							<div className="absolute -inset-10 rounded-full bg-purple-500/[0.06] blur-3xl" />
+							<div className="absolute -inset-10 rounded-full bg-purple-500/6 blur-3xl" />
 
 							{/* IMAGE */}
 							<div className="relative overflow-hidden rounded-[1.75rem] border border-neutral-800 bg-neutral-950">
 								<img
 									src={PROFILE_PIC}
 									alt="Portrait of Yash Gaurkar"
-									className="relative z-10 aspect-[4/5] w-full object-cover grayscale-[15%] opacity-90 transition-all duration-700 hover:grayscale-0 hover:opacity-100"
+									className="relative z-10 aspect-4/5 w-full object-cover grayscale-15 opacity-90 transition-all duration-700 hover:grayscale-0 hover:opacity-100"
 								/>
 
-								<div className="absolute inset-0 z-20 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+								<div className="absolute inset-0 z-20 bg-linear-to-t from-black/50 via-transparent to-transparent" />
 							</div>
 
 							{/* LOCATION */}
