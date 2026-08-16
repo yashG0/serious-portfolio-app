@@ -1,0 +1,131 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 256 256"
+  fill="none"
+>
+  <defs>
+    <linearGradient
+      id="y-gradient"
+      x1="48"
+      y1="32"
+      x2="208"
+      y2="224"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#41D1FF" />
+      <stop offset="0.48" stop-color="#4F7CFF" />
+      <stop offset="1" stop-color="#BD34FE" />
+    </linearGradient>
+
+    <linearGradient
+      id="y-highlight"
+      x1="75"
+      y1="55"
+      x2="178"
+      y2="198"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0.35" stop-color="#B8C7FF" />
+      <stop offset="1" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <filter
+      id="glow"
+      x="-50%"
+      y="-50%"
+      width="200%"
+      height="200%"
+    >
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark rounded background -->
+  <rect
+    x="8"
+    y="8"
+    width="240"
+    height="240"
+    rx="58"
+    fill="#070A14"
+  />
+
+  <!-- Subtle border -->
+  <rect
+    x="9"
+    y="9"
+    width="238"
+    height="238"
+    rx="57"
+    stroke="url(#y-gradient)"
+    stroke-width="3"
+    opacity="0.9"
+  />
+
+  <!-- Y glow -->
+  <path
+    d="M62 55
+       L103 55
+       L128 96
+       L153 55
+       L194 55
+       L148 128
+       L148 205
+       L108 205
+       L108 128
+       Z"
+    fill="url(#y-gradient)"
+    opacity="0.35"
+    filter="url(#glow)"
+  />
+
+  <!-- Main Y -->
+  <path
+    d="M62 48
+       L105 48
+       L128 88
+       L151 48
+       L194 48
+       L148 121
+       L148 208
+       L108 208
+       L108 121
+       Z"
+    fill="url(#y-gradient)"
+  />
+
+  <!-- Highlight slash -->
+  <path
+    d="M78 48
+       L105 48
+       L128 88
+       L115 108
+       Z"
+    fill="url(#y-highlight)"
+  />
+
+  <!-- Diagonal accent -->
+  <path
+    d="M128 88
+       L194 48
+       L148 121
+       L128 121
+       L108 121
+       Z"
+    fill="url(#y-gradient)"
+    opacity="0.95"
+  />
+
+  <!-- Small accent point -->
+  <circle
+    cx="194"
+    cy="48"
+    r="5"
+    fill="#41D1FF"
+  />
+</svg>

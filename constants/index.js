@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/linkpulse.png";
+import project2 from "../assets/projects/smart_batch_pdf.png";
+import project3 from "../assets/projects/job_app_tracker.png";
+import project4 from "../assets/projects/pp.png";
 
 export const HERO_CONTENT = `I build practical, scalable software with a focus on backend systems, APIs, and modern web applications. My work combines Python, Go, React, and modern development tools to turn ideas into reliable, usable products.`;
 
