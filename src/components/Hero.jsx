@@ -65,7 +65,7 @@ export const Hero = () => {
 							href="#projects"
 							className="group inline-flex items-center gap-2 rounded-full bg-neutral-100 px-5 py-3 text-sm font-medium text-neutral-950 transition-colors hover:bg-white"
 						>
-							Explore selected work
+							Explore all 4 projects
 							<FiArrowRight className="transition-transform group-hover:translate-x-0.5" />
 						</a>
 						<a
@@ -97,12 +97,21 @@ export const Hero = () => {
 					transition={{ duration: 0.65, delay: 0.18, ease: "easeOut" }}
 					className="relative isolate mx-auto w-full max-w-lg lg:justify-self-end"
 				>
+					<div className="relative z-10 mb-3 flex items-center justify-between px-1">
+						<p className="flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-neutral-300 sm:text-[11px]">
+							<span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+							Featured project
+						</p>
+						<p className="font-mono text-[10px] tracking-[0.12em] text-neutral-500">
+							01 <span className="text-neutral-700">/</span> 04
+						</p>
+					</div>
 					<div aria-hidden="true" className="pointer-events-none absolute -inset-5 z-0 rounded-[2rem] bg-emerald-400/[0.045] blur-2xl sm:-inset-8" />
 					<a
 						href="https://github.com/yashG0/resonance-api-testing-platform"
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label="View Resonance API testing platform on GitHub"
+						aria-label="Featured project: Resonance API testing platform, one of four projects. View its GitHub repository."
 						className="group relative z-10 block overflow-hidden rounded-2xl border border-white/[0.12] bg-[#0c0d0f]/95 shadow-[0_32px_100px_-48px_rgba(0,0,0,0.95)] ring-1 ring-white/[0.04] transition-all duration-300 hover:border-emerald-300/30 hover:shadow-[0_36px_110px_-48px_rgba(16,185,129,0.22)]"
 					>
 						<div className="hidden h-12 items-center justify-between border-b border-white/[0.06] bg-white/[0.02] px-4 sm:flex">
@@ -138,14 +147,13 @@ export const Hero = () => {
 								</p>
 							</div>
 							<span className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] px-3 py-2 text-[11px] font-medium text-neutral-300 transition-all group-hover:border-emerald-300/25 group-hover:bg-emerald-300/[0.06] group-hover:text-white">
-								Explore <FiArrowUpRight className="text-emerald-300" />
+								Source <FiArrowUpRight className="text-emerald-300" />
 							</span>
 						</div>
 					</a>
-					<p className="mt-2 flex items-center justify-end gap-2 text-[9px] uppercase tracking-[0.16em] text-neutral-600">
-						<span className="h-1 w-1 rounded-full bg-emerald-400/70" />
-						01 / Featured work
-					</p>
+					<a href="#projects" className="group relative z-10 mt-3 flex items-center justify-end gap-2 text-[10px] font-medium uppercase tracking-[0.15em] text-neutral-500 transition-colors hover:text-white">
+						View all projects <FiArrowUpRight className="text-emerald-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+					</a>
 				</motion.div>
 			</div>
 		</section>
