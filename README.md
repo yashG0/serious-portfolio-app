@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio built to showcase my work, technical skills, education, and software projects.
 
-The portfolio focuses on a clean dark visual system, subtle motion, responsive layouts, and a minimal editorial-style interface.
+The portfolio uses a dark editorial visual system with a consistent emerald accent, responsive layouts, subtle motion, and a curated showcase of recent work.
 
 ## Live Website
 
@@ -39,6 +39,19 @@ The project was originally created with an older React/Vite setup and has been m
 - npm
 - Git
 
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Create a production build with:
+
+```bash
+npm run build
+```
+
 ### Technologies Featured
 
 - Python
@@ -52,44 +65,50 @@ The project was originally created with an older React/Vite setup and has been m
 
 ## Featured Projects
 
-### LinkPulse
+### DevShow
 
-A concurrent website monitoring service built with Go.
+A platform for developers to showcase their work, explore projects, and share what they are building.
 
-It periodically checks endpoints, records availability and response-time metrics, and provides a REST API for managing website monitors.
+[Live site](https://devshow.yashgaurkar.me) · [GitHub](https://github.com/yashG0/Devshow-application)
 
-**Technologies:** Go, SQLite, REST API, Docker
+**Technologies:** React, JavaScript
+
+### Ledger — Full-Stack Job Application Tracker
+
+A full-stack job search tracker for keeping applications, hiring stages, and progress in one quiet, organized workspace.
+
+[Live site](https://jobtracker.yashgaurkar.me/) · [GitHub](https://github.com/yashG0/full-stack-job-application-tracker)
+
+**Technologies:** Django, Django REST Framework, React, PostgreSQL
+
+### Resonance
+
+A Linux-first, offline-friendly desktop client for testing HTTP APIs, built with Rust and Slint with local SQLite storage.
+
+[GitHub](https://github.com/yashG0/resonance-api-testing-platform)
+
+**Technologies:** Rust, Slint, SQLite, HTTP
 
 ### Smart Batch PDF Toolkit
 
-A local-first document processing toolkit for batch PDF and image operations.
+A local-first toolkit for batch PDF and image tasks, including merging, splitting, conversion, compression, and page extraction.
 
-The application is designed to simplify repetitive document-processing workflows through a Streamlit interface.
+[GitHub](https://github.com/yashG0/Smart-Batch-Converter-PDF-Image-Processing-GUI)
 
-**Technologies:** Python, Streamlit, Pillow, PyMuPDF, SQLite, img2pdf
-
-### Job Application Tracker
-
-A web application for organizing the job-search lifecycle.
-
-It allows users to track applications, hiring stages, and application history through a lightweight server-rendered interface.
-
-**Technologies:** FastAPI, PostgreSQL, Pydantic, SQLAlchemy, HTMX
+**Technologies:** Python, Streamlit, PyMuPDF, Pillow
 
 ## Design
 
-The portfolio uses a minimal dark interface built around:
+The portfolio is designed as a single, cohesive experience across desktop and mobile:
 
-- Dark neutral color palette
-- Subtle grid background
-- Editorial typography
-- Gradient accents
-- Responsive layouts
-- Smooth scroll animations
-- Minimal hover interactions
-- Mobile-first responsive behavior
+- A dark neutral palette with emerald accents
+- A fixed grid-and-glow background and sticky navigation
+- Editorial typography and structured project cards
+- Responsive layouts with compact mobile navigation and previews
+- Subtle motion that respects reduced-motion preferences
+- Hover and focus states for links and interactive cards
 
-The goal is to keep the interface visually interesting without overwhelming the actual content.
+Project screenshots use optimized WebP assets. Below-the-fold images load lazily to keep the initial page lightweight.
 
 ## Project Structure
 
