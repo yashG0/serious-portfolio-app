@@ -1,13 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nothing+You+Could+Do&display=swap");
-
 @import "tailwindcss";
 
 :root {
 	font-family: "Inter", sans-serif;
-}
-
-.font-Nothing {
-	font-family: "Nothing You Could Do", serif;
-	font-weight: 400;
-	font-style: normal;
 }

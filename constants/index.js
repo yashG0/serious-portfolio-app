@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/linkpulse.png";
-import project2 from "../assets/projects/smart_batch_pdf.png";
-import project3 from "../assets/projects/job_app_tracker.png";
-import project4 from "../assets/projects/pp.png";
+import devShowPreview from "../assets/projects/devshow-pic.webp";
+import ledgerPreview from "../assets/projects/ledger-job-application-tracker.webp";
+import resonancePreview from "../assets/projects/resonance-pic-1.webp";
+import smartBatchPreview from "../assets/projects/smart_batch_pdf-pic.webp";
 
 export const HERO_CONTENT = `I build practical, scalable software with a focus on backend systems, APIs, and modern web applications. My work combines Python, Go, React, and modern development tools to turn ideas into reliable, usable products.`;
 
@@ -13,47 +13,40 @@ Today, I work primarily with Python and Go on the backend while using React and 
 
 export const PROJECTS = [
   {
-    title: "LinkPulse",
-    image: project1,
+    title: "DevShow",
+    image: devShowPreview,
     description:
-      "A concurrent website monitoring service built with Go that periodically checks endpoints, records availability and response-time metrics, and exposes a REST API for managing monitors.",
-    technologies: ["Go", "SQLite", "REST API", "Docker"],
-    github: "https://github.com/yashG0/linkpulse-website-monitoring-tool",
-    live: null,
+      "A platform for developers to showcase their work, explore projects, and share what they are building.",
+    technologies: ["React", "JavaScript", "Developer Platform"],
+    github: "https://github.com/yashG0/Devshow-application",
+    live: "https://devshow.yashgaurkar.me",
   },
   {
-    title: "Smart Batch PDF Toolkit",
-    image: project2,
+    title: "Ledger — Full-Stack Job Application Tracker",
+    image: ledgerPreview,
     description:
-      "A local-first document processing toolkit for batch PDF and image operations, designed to simplify repetitive file-processing workflows through a Streamlit interface.",
-    technologies: [
-      "Python",
-      "Streamlit",
-      "Pillow",
-      "PyMuPDF",
-      "SQLite",
-      "img2pdf",
-    ],
-    github:
-      "https://github.com/yashG0/Smart-Batch-Converter-PDF-Image-Processing-GUI",
-    live: null,
-  },
-  {
-    title: "Job Application Tracker",
-    image: project3,
-    description:
-      "A web application for organizing the job search lifecycle, allowing users to track applications, hiring stages, and application history through a lightweight server-rendered interface.",
-    technologies: ["Django", "PostgreSQL", "Docker", "Django-DRF", "React"],
+      "A full-stack job search tracker for keeping applications, hiring stages, and progress in one quiet, organized workspace.",
+    technologies: ["Django", "Django REST Framework", "React", "PostgreSQL"],
     github: "https://github.com/yashG0/full-stack-job-application-tracker",
     live: "https://jobtracker.yashgaurkar.me/",
   },
   {
-    title: "Personal Portfolio",
-    image: project4,
+    title: "Resonance",
+    image: resonancePreview,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["Javascript", "React", "TailwindCSS", "Motion Framer"],
-    github: "https://github.com/yashG0/serious-portfolio-app",
+      "A Linux-first, offline-friendly desktop client for testing HTTP APIs. Built with Rust and Slint, with local SQLite storage.",
+    technologies: ["Rust", "Slint", "SQLite", "HTTP"],
+    github: "https://github.com/yashG0/resonance-api-testing-platform",
+    live: null,
+  },
+  {
+    title: "Smart Batch PDF Toolkit",
+    image: smartBatchPreview,
+    description:
+      "A local-first toolkit for batch PDF and image tasks, including merging, splitting, conversion, compression, and page extraction.",
+    technologies: ["Python", "Streamlit", "PyMuPDF", "Pillow"],
+    github:
+      "https://github.com/yashG0/Smart-Batch-Converter-PDF-Image-Processing-GUI",
     live: null,
   },
 ];

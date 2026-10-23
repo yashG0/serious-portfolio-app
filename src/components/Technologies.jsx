@@ -61,26 +61,26 @@ const categories = [
 
 export const Technologies = () => {
 	return (
-		<section className="border-b border-neutral-900 py-20">
-			<div className="mx-auto max-w-6xl px-4">
+		<section className="scroll-mt-24 border-b border-neutral-900 py-10 sm:py-20">
+			<div className="mx-auto max-w-6xl px-1 sm:px-4">
 				{/* HEADER */}
 				<motion.div
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.6 }}
-					className="mb-14"
+					className="mb-8 sm:mb-14"
 				>
-					<p className="mb-3 text-sm uppercase tracking-[0.3em] text-neutral-500">
+					<p className="mb-3 text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500">
 						02 / Skills
 					</p>
 
-					<h2 className="text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
+					<h2 className="text-4xl font-light leading-[1.08] tracking-[-0.045em] sm:text-5xl lg:text-6xl">
 						Tools I use to{" "}
 						<span className="text-neutral-500">build.</span>
 					</h2>
 
-					<p className="mt-5 max-w-2xl text-neutral-500">
+					<p className="mt-5 max-w-2xl text-[0.95rem] leading-7 text-neutral-400">
 						A focused set of technologies I use across backend
 						systems, web applications, databases, and development
 						infrastructure.
@@ -99,16 +99,16 @@ export const Technologies = () => {
 								duration: 0.5,
 								delay: categoryIndex * 0.1,
 							}}
-							className="group rounded-2xl border border-neutral-800 bg-neutral-950/40 p-7 transition-all duration-300 hover:border-neutral-700 hover:bg-neutral-900/40"
+							className="group rounded-3xl border border-neutral-800/80 bg-neutral-950/55 p-4 shadow-[0_24px_80px_-48px_rgba(0,0,0,0.9)] transition-all duration-300 hover:-translate-y-1 hover:border-neutral-700 hover:bg-neutral-900/65 sm:p-7"
 						>
 							{/* CATEGORY HEADER */}
 							<div className="mb-7 flex items-start justify-between">
 								<div>
-									<h3 className="text-xl font-medium text-neutral-200">
+										<h3 className="text-lg font-medium tracking-[-0.02em] text-neutral-100">
 										{category.title}
 									</h3>
 
-									<p className="mt-2 text-sm text-neutral-500">
+									<p className="mt-2 text-[0.875rem] leading-6 text-neutral-400">
 										{category.description}
 									</p>
 								</div>
@@ -119,18 +119,18 @@ export const Technologies = () => {
 							</div>
 
 							{/* SKILLS */}
-							<div className="grid grid-cols-2 gap-3">
+							<div className="grid grid-cols-2 gap-2 sm:gap-3">
 								{category.items.map((item) => {
 									const Icon = item.icon;
 
 									return (
 										<div
 											key={item.name}
-											className="flex items-center gap-3 rounded-xl border border-neutral-800/80 px-4 py-3 transition-all duration-300 hover:border-neutral-700 hover:bg-neutral-900"
+											className="flex min-w-0 items-center gap-2 rounded-xl border border-neutral-800/70 bg-black/20 px-2.5 py-2.5 transition-all duration-300 hover:border-emerald-400/30 hover:bg-emerald-400/[0.04] sm:gap-3 sm:px-4 sm:py-3"
 										>
-											<Icon className="text-2xl text-neutral-400 transition-colors duration-300 group-hover:text-neutral-200" />
+											<Icon className="shrink-0 text-xl text-neutral-400 transition-colors duration-300 group-hover:text-neutral-200 sm:text-2xl" />
 
-											<span className="text-sm text-neutral-400">
+											<span className="truncate text-[12px] text-neutral-400 sm:text-sm">
 												{item.name}
 											</span>
 										</div>
