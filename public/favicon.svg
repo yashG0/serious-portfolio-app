@@ -1,12 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <defs>
-    <linearGradient id="border" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#3F3F46" />
-      <stop offset="1" stop-color="#202124" />
-    </linearGradient>
-  </defs>
-  <rect x="2" y="2" width="60" height="60" rx="18" fill="#0B0C0F" />
-  <rect x="2.5" y="2.5" width="59" height="59" rx="17.5" stroke="url(#border)" />
-  <text x="31" y="40" text-anchor="middle" fill="#F4F4F5" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="650" letter-spacing="-2.2">YG</text>
+  <rect x="2" y="2" width="60" height="60" rx="19" fill="#0B0C0F" />
+  <rect x="2.5" y="2.5" width="59" height="59" rx="18.5" stroke="#303238" />
+  <path d="M15.5 20.5 25 30l9.5-9.5M25 30v15" stroke="#F4F4F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M47.5 25.5a10.5 10.5 0 1 0 0 14M47.5 32h-8" stroke="#F4F4F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
   <circle cx="51" cy="13" r="3" fill="#34D399" />
 </svg>
